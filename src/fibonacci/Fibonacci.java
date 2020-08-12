@@ -1,7 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/**
+        Jesus Ivan Beltran Moreno
  */
 package fibonacci;
 
@@ -9,17 +7,9 @@ import java.util.ArrayList; //no la use
 import java.util.Scanner;
         
 
-/**
- *
- * @author ivanc
- */
 public class Fibonacci {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
         Scanner sc = new Scanner(System.in);
         int Numero_Izq = 0; 
         int Numero_Der = 1;
