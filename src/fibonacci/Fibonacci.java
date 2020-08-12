@@ -11,7 +11,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author ivanc
+ * @author Yisus
  */
 public class Fibonacci {
 
@@ -23,23 +23,25 @@ public class Fibonacci {
         Scanner sc = new Scanner(System.in);
         int Numero_Izq = 0; 
         int Numero_Der = 1;
-        int suma = 1;        
+        int suma = 0;        
         int limite;
        
         System.out.println(" Ingresa un limite: ");
         limite = sc.nextInt();
          System.out.println("");
          
-         System.out.println(Numero_Izq);
+         //System.out.println(Numero_Izq);
            
-    for (int i = 1; i < limite; i++) {
-        System.out.println(suma);
-        
-        suma = Numero_Izq + Numero_Der;
+    for (int i = 0; i < limite; i++) {
+        if (i+1 == limite)
+       System.out.println(Numero_Izq); // imprime  0
+       // System.out.println(suma);
+        //--------
+        suma = Numero_Izq + Numero_Der;  //suma = 0 + 1  = 1    
        
-        Numero_Izq = Numero_Der;
+        Numero_Izq = Numero_Der;   // num izq = 1
         
-        Numero_Der = suma;
+        Numero_Der = suma;  // num der = 1....
        }  
                        
     }
